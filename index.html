@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fridge2Fork - Find Recipes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <h1>🥗 Fridge2Fork</h1>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="header-section">
+        <h2>Find Recipes by Ingredients</h2>
+        <p>
+          Enter the ingredients you have, and discover delicious recipes you can
+          make right now.
+        </p>
+
+        <div class="search-box">
+          <input
+            type="text"
+            id="ingredients"
+            placeholder="e.g. chicken, tomato, onion"
+          />
+          <button onclick="getRecipes()">Search</button>
+        </div>
+      </div>
+
+      <div id="loader" class="loader hidden"></div>
+      <div id="results" class="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
